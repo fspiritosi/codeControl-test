@@ -1,5 +1,4 @@
 "use client"
-import {ButtonSignInGithub } from '@/components/localComponents/ButtonSingIn'
 
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
@@ -58,7 +57,7 @@ const FormLogin = () =>  {
         }
     }
   return (
-    <div className="h-[calc(100vh-7rem)] flex items-center justify-center flex-col gap-10">
+    <div className="h-[calc(100vh-7rem)] flex items-center justify-center">
         <Card className="w-[500px] p-5">
             <CardHeader className="items-center">
                 <CardTitle>
@@ -101,7 +100,6 @@ const FormLogin = () =>  {
                 </Form>
             </CardContent>
         </Card>
-        <ButtonSignInGithub />
         {error && 
             <Alert className="w-[600px] z-10 absolute gap-y-5 bg-gray-900" variant='destructive'>
                 <AlertCircle className="h-4 w-4" />    

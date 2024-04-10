@@ -1,6 +1,6 @@
 import { getServerSession } from "next-auth"
 import Image from "next/image"
-import ButtonSingout from "../components/ButtonSingout"
+import ButtonSingout from "../../components/localComponents/ButtonSingout"
 
 
 
