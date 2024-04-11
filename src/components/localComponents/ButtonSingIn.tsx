@@ -1,12 +1,7 @@
 'use client'
 import { signIn } from 'next-auth/react'
 import { Button } from "@/components/ui/button"
-import { Github, Mail } from "lucide-react"
-import { useRouter } from 'next/navigation'
-
-
-
-
+import { Github } from "lucide-react"
 
 export function ButtonSignInGithub() {
   return (

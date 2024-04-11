@@ -1,11 +1,10 @@
 'use client'
 import { signOut } from 'next-auth/react'
-import React from 'react'
+import { Button } from "@/components/ui/button"
 
 function ButtonSingout() {
   return (
-    <button onClick={() => signOut()} className='px-3 py-2 bg-blue-400 rounded-md text-white font-bold hover:bg-blue-500'>Cerrar Sesion</button>
-
+    <Button onClick={() => signOut()} className='w-full'>Cerrar Sesion</Button>
   )
 }
 

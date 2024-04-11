@@ -6,7 +6,7 @@ import bcrypt from "bcrypt"
 export async function POST(request: any) {
     try {
         const data = await request.json()
-
+        
         //chequea que no se repita el email
         const email = await prisma.user.findUnique({
             where:{
@@ -31,7 +31,7 @@ export async function POST(request: any) {
                 password: hashpassword,
             }
         })
-        console.log('newUser', newUser)
+        
         const {password, ...userWithoutPassword} = newUser
         return NextResponse.json(userWithoutPassword, { status: 201 })
     } catch (error: any) {
